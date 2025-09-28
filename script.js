@@ -24,7 +24,7 @@ btnIncome.addEventListener('click', ()=> setType('income'))
 btnExpense.addEventListener('click', ()=> setType('expense'))
 function format(n){
 const o = Number(n) || 0
-return o.toLocaleString(undefined, {style:'currency',currency:'NGN',minimumFractionDigits:2})
+return o.toLocaleString(undefined, {style:'currency',currency:'Rs',minimumFractionDigits:2})
 }
 function save(){ localStorage.setItem('txs', JSON.stringify(state.entries)) }
 function render(){
